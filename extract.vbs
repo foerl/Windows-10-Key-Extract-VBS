@@ -54,7 +54,7 @@ Set objshell = CreateObject("wscript.shell")
 'Get current user name
 UserName = objshell.ExpandEnvironmentStrings("%UserName%")
 'Create a text file on desktop
-fName = "C:\Users\" & UserName & "\Desktop\WindowsKeyInfo.txt"
+fName = "C:\Users\" & UserName & "\Desktop\WindowsProductKeyInfo.txt"
 Set fso = CreateObject("Scripting.FileSystemObject")
 Set txt = fso.CreateTextFile(fName)
 txt.Writeline Data
